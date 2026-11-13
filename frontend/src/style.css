@@ -39,3 +39,7 @@
       animation-timing-function: linear;
 }
 
+button  {
+  cursor: pointer;
+}
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
     <title>frontend</title>
   </head>
   <body class="flex flex-col min-h-screen bg-gray-100 font-sans antialiased">
@@ -15,7 +16,7 @@
         <div>
             <a href="#" class="text-white hover:underline mx-4">Welcome {{ user.username }}</a>
             <a href="/blog-list" class="text-white hover:underline mx-4">Saved Blog Posts</a>
-            <a href="#" class="text-white hover:underline">Logout</a>
+            <a href="./src/templates/blog-details.html" class="text-white hover:underline">Logout</a>
         </div>
       </nav>
     </header>
@@ -49,6 +50,9 @@
             </div>
           </section>
         <br>
+         <!-- section for loading circle -->
+        <div style="display: none;" id="loading-circle" class="load"></div>
+
           <!--generate blog display-->
           <section class="mt-10 flex-grow">
             <h2 class="text-xl mb-4 font-semibold">Generated blog Article</h2>
