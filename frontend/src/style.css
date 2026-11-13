@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/*@source "./templates";*/
+
 @keyframes rotate {
   from{
     transform: rotate(0deg);
@@ -15,6 +17,10 @@
   to {
       -webkit-transform: rotate(360deg);
   }
+}
+
+nav {
+  gap:20px
 }
 
 .load{
