@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog_generator'
+
 ]
 
 MIDDLEWARE = [
@@ -50,11 +52,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'ai_blog_app.urls'
-
+FRONTEND_DIR = BASE_DIR.parent.parent / 'frontend'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [FRONTEND_DIR, FRONTEND_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
